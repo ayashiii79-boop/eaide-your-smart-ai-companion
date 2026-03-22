@@ -22,7 +22,7 @@ const ChatMessage = ({ role, content }: ChatMessageProps) => {
         {isUser ? (
           <User className="w-4 h-4 text-primary-foreground" />
         ) : (
-          <Bot className="w-4 h-4 text-primary" />
+          <img src={eaideLogo} alt="eaide" className="w-full h-full object-cover rounded-full" />
         )}
       </div>
 
