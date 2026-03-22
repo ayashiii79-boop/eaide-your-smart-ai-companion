@@ -1,7 +1,9 @@
+import eaideLogo from "@/assets/eaide-logo.jpeg";
+
 const TypingIndicator = () => (
   <div className="flex gap-3 animate-fade-in-up">
-    <div className="flex-shrink-0 w-8 h-8 rounded-full glass flex items-center justify-center">
-      <div className="w-4 h-4 rounded-full bg-primary/60" />
+    <div className="flex-shrink-0 w-8 h-8 rounded-full overflow-hidden">
+      <img src={eaideLogo} alt="eaide" className="w-full h-full object-cover" />
     </div>
     <div className="bubble-ai px-4 py-3 rounded-2xl rounded-tl-md">
       <div className="flex gap-1.5">

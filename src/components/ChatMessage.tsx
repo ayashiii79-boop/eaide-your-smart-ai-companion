@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import { Bot, User } from "lucide-react";
+import { User } from "lucide-react";
+import eaideLogo from "@/assets/eaide-logo.jpeg";
 
 type ChatMessageProps = {
   role: "user" | "assistant";
@@ -21,7 +22,7 @@ const ChatMessage = ({ role, content }: ChatMessageProps) => {
         {isUser ? (
           <User className="w-4 h-4 text-primary-foreground" />
         ) : (
-          <Bot className="w-4 h-4 text-primary" />
+          <img src={eaideLogo} alt="eaide" className="w-full h-full object-cover rounded-full" />
         )}
       </div>
 
