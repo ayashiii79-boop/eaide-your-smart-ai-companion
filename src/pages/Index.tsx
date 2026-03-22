@@ -71,7 +71,7 @@ const Index = () => {
       {/* Header */}
       <header className="relative z-10 glass border-b border-white/5">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-primary/20 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-2xl bg-primary/20 flex items-center justify-center animate-glow-pulse">
             <Sparkles className="w-5 h-5 text-primary" />
           </div>
           <div>
