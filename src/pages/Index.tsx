@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-import { Bot, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import bgGradient from "@/assets/bg-gradient.jpg";
 import ChatMessage from "@/components/ChatMessage";
 import ChatInput from "@/components/ChatInput";
 import TypingIndicator from "@/components/TypingIndicator";
+import ParticleBackground from "@/components/ParticleBackground";
 import { streamChat, type Msg } from "@/lib/chat";
 import { toast } from "sonner";
 
@@ -61,15 +62,16 @@ const Index = () => {
     <div className="relative min-h-screen flex flex-col">
       {/* Background */}
       <div
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat scale-110"
         style={{ backgroundImage: `url(${bgGradient})` }}
       />
       <div className="fixed inset-0 bg-background/70" />
+      <ParticleBackground />
 
       {/* Header */}
       <header className="relative z-10 glass border-b border-white/5">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-primary/20 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-2xl bg-primary/20 flex items-center justify-center animate-glow-pulse">
             <Sparkles className="w-5 h-5 text-primary" />
           </div>
           <div>

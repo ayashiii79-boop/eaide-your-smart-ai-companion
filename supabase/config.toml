@@ -1,5 +1,4 @@
-[project]
-id = "eaide"
+project_id = "ufbqijloltgbadepixqu"
 
 [functions.chat]
 verify_jwt = false
