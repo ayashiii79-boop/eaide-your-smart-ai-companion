@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Instagram } from "lucide-react";
 
 import bgGradient from "@/assets/bg-gradient.jpg";
 import eaideLogo from "@/assets/eaide-logo.jpeg";
@@ -118,9 +119,21 @@ const Index = () => {
       <footer className="relative z-10 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 py-3">
           <ChatInput onSend={handleSend} disabled={isLoading} />
-          <p className="text-center text-[10px] text-muted-foreground mt-2 opacity-60">
-            eaide dapat membuat kesalahan. Periksa informasi penting.
-          </p>
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <p className="text-[10px] text-muted-foreground opacity-60">
+              eaide dapat membuat kesalahan. Periksa informasi penting.
+            </p>
+            <span className="text-muted-foreground/30">·</span>
+            <a
+              href="https://www.instagram.com/lahdepan?igsh=MTB4M2NocGc3OGgweQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground/60 hover:text-primary transition-colors"
+              title="Instagram @lahdepan"
+            >
+              <Instagram className="w-3.5 h-3.5" />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
