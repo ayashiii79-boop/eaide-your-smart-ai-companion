@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import { Bot, User } from "lucide-react";
+import { User } from "lucide-react";
+import eaideLogo from "@/assets/eaide-logo.jpeg";
 
 type ChatMessageProps = {
   role: "user" | "assistant";
