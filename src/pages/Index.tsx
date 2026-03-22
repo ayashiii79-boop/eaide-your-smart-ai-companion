@@ -62,10 +62,11 @@ const Index = () => {
     <div className="relative min-h-screen flex flex-col">
       {/* Background */}
       <div
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat scale-110"
         style={{ backgroundImage: `url(${bgGradient})` }}
       />
       <div className="fixed inset-0 bg-background/70" />
+      <ParticleBackground />
 
       {/* Header */}
       <header className="relative z-10 glass border-b border-white/5">
