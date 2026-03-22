@@ -81,7 +81,7 @@ const Index = () => {
             </p>
           </div>
           <div className="ml-auto flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-xs text-muted-foreground">Online</span>
           </div>
         </div>
