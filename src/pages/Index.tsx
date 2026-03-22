@@ -69,23 +69,34 @@ const Index = () => {
       <div className="fixed inset-0 bg-background/70" />
       <ParticleBackground />
 
-      {/* Header */}
-      <header className="relative z-10 glass border-b border-white/5">
-        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl overflow-hidden animate-glow-pulse">
-            <img src={eaideLogo} alt="eaide" className="w-full h-full object-cover" />
-          </div>
-          <div>
-            <h1 className="text-base font-semibold text-foreground tracking-tight">
-              eaide
-            </h1>
-            <p className="text-xs text-muted-foreground">
-              Asisten Virtual Cerdas
-            </p>
-          </div>
-          <div className="ml-auto flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-online animate-pulse" />
-            <span className="text-xs text-muted-foreground">Online</span>
+      {/* Floating Header */}
+      <header className="relative z-10 pt-4 px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto">
+          <div
+            className="flex items-center gap-3 px-5 py-2.5 rounded-[50px]"
+            style={{
+              background: 'hsla(220, 40%, 95%, 0.08)',
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              border: '1px solid hsla(0, 0%, 100%, 0.1)',
+              boxShadow: '0 8px 32px 0 hsla(220, 60%, 4%, 0.37)',
+            }}
+          >
+            <div className="w-9 h-9 rounded-full overflow-hidden animate-glow-pulse flex-shrink-0">
+              <img src={eaideLogo} alt="eaide" className="w-full h-full object-cover" />
+            </div>
+            <div className="min-w-0">
+              <h1 className="text-sm font-semibold text-foreground tracking-tight leading-tight">
+                eaide
+              </h1>
+              <p className="text-[11px] text-muted-foreground leading-tight">
+                Asisten Virtual Cerdas
+              </p>
+            </div>
+            <div className="ml-auto flex items-center gap-1.5 flex-shrink-0">
+              <span className="w-2 h-2 rounded-full bg-online animate-pulse" />
+              <span className="text-[11px] text-muted-foreground">Online</span>
+            </div>
           </div>
         </div>
       </header>
