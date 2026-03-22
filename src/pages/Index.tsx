@@ -75,11 +75,11 @@ const Index = () => {
           <div
             className="flex items-center gap-3 px-5 py-2.5 rounded-[50px]"
             style={{
-              background: 'hsla(220, 40%, 95%, 0.08)',
-              backdropFilter: 'blur(10px)',
-              WebkitBackdropFilter: 'blur(10px)',
-              border: '1px solid hsla(0, 0%, 100%, 0.1)',
-              boxShadow: '0 8px 32px 0 hsla(220, 60%, 4%, 0.37)',
+              background: 'hsla(355, 60%, 90%, 0.06)',
+              backdropFilter: 'blur(24px) saturate(1.8)',
+              WebkitBackdropFilter: 'blur(24px) saturate(1.8)',
+              border: '1px solid hsla(0, 0%, 100%, 0.18)',
+              boxShadow: '0 8px 32px 0 hsla(355, 60%, 10%, 0.4), inset 0 1px 0 0 hsla(0, 0%, 100%, 0.08)',
             }}
           >
             <div className="w-9 h-9 rounded-full overflow-hidden animate-glow-pulse flex-shrink-0">
