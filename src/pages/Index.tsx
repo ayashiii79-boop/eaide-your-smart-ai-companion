@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Instagram } from "lucide-react";
 
 import bgGradient from "@/assets/bg-gradient.jpg";
 import eaideLogo from "@/assets/eaide-logo.jpeg";
