@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-import { Bot, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import bgGradient from "@/assets/bg-gradient.jpg";
 import ChatMessage from "@/components/ChatMessage";
 import ChatInput from "@/components/ChatInput";
 import TypingIndicator from "@/components/TypingIndicator";
+import ParticleBackground from "@/components/ParticleBackground";
 import { streamChat, type Msg } from "@/lib/chat";
 import { toast } from "sonner";
 
