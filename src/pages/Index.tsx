@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Sparkles } from "lucide-react";
+
 import bgGradient from "@/assets/bg-gradient.jpg";
 import eaideLogo from "@/assets/eaide-logo.jpeg";
 import ChatMessage from "@/components/ChatMessage";
