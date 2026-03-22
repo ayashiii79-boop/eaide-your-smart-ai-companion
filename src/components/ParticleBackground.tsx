@@ -64,7 +64,7 @@ const ParticleBackground = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(355, 82%, 70%, ${currentOpacity})`;
+        ctx.fillStyle = `hsla(187, 60%, 60%, ${currentOpacity})`;
         ctx.fill();
       });
 
