@@ -80,7 +80,7 @@ const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `hsla(355, 82%, 70%, ${alpha})`;
+            ctx.strokeStyle = `hsla(187, 60%, 60%, ${alpha})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
