@@ -7,47 +7,47 @@
 
 @layer base {
   :root {
-    --background: 220 60% 8%;
+    --background: 355 50% 6%;
     --foreground: 0 0% 100%;
 
-    --card: 220 40% 15%;
+    --card: 355 30% 12%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 40% 15%;
+    --popover: 355 30% 12%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 210 100% 56%;
+    --primary: 355 82% 56%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 30% 20%;
+    --secondary: 355 25% 16%;
     --secondary-foreground: 0 0% 90%;
 
-    --muted: 220 20% 25%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 355 15% 20%;
+    --muted-foreground: 355 10% 55%;
 
-    --accent: 142 70% 49%;
+    --accent: 355 82% 56%;
     --online: 142 70% 49%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 25%;
-    --input: 220 20% 20%;
-    --ring: 210 100% 56%;
+    --border: 355 15% 20%;
+    --input: 355 15% 15%;
+    --ring: 355 82% 56%;
 
     --radius: 1rem;
 
-    /* Glassmorphism tokens */
-    --glass-bg: 220 40% 95% / 0.08;
-    --glass-border: 0 0% 100% / 0.12;
-    --glass-blur: 20px;
-    --glass-shadow: 0 8px 32px 0 hsla(220, 60%, 4%, 0.37);
+    /* Liquid Glass tokens */
+    --glass-bg: 355 60% 90% / 0.06;
+    --glass-border: 0 0% 100% / 0.18;
+    --glass-blur: 24px;
+    --glass-shadow: 0 8px 32px 0 hsla(355, 60%, 10%, 0.4), inset 0 1px 0 0 hsla(0, 0%, 100%, 0.08);
 
     /* Chat specific */
-    --bubble-user: 210 100% 56% / 0.85;
-    --bubble-ai: 220 40% 95% / 0.1;
-    --input-glass: 220 40% 95% / 0.06;
+    --bubble-user: 355 82% 56% / 0.8;
+    --bubble-ai: 355 40% 90% / 0.08;
+    --input-glass: 355 40% 90% / 0.05;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -56,7 +56,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 355 82% 56%;
   }
 }
 
@@ -74,30 +74,32 @@
 @layer components {
   .glass {
     background: hsla(var(--glass-bg));
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
     border: 1px solid hsla(var(--glass-border));
     box-shadow: var(--glass-shadow);
   }
 
   .glass-input {
     background: hsla(var(--input-glass));
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px) saturate(1.6);
+    -webkit-backdrop-filter: blur(20px) saturate(1.6);
     border: 1px solid hsla(var(--glass-border));
   }
 
   .bubble-user {
     background: hsla(var(--bubble-user));
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px) saturate(1.5);
+    -webkit-backdrop-filter: blur(16px) saturate(1.5);
+    box-shadow: 0 4px 20px hsla(355, 82%, 40%, 0.25), inset 0 1px 0 hsla(0, 0%, 100%, 0.1);
   }
 
   .bubble-ai {
     background: hsla(var(--bubble-ai));
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
     border: 1px solid hsla(var(--glass-border));
+    box-shadow: var(--glass-shadow);
   }
 }
 
